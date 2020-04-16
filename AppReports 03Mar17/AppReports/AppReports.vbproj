@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{85A0466F-807C-4CF5-9F35-70A76B6E32FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AppReports.My.MyApplication</StartupObject>
+    <RootNamespace>AppReports</RootNamespace>
+    <AssemblyName>AppReports</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AppReports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AppReports.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Antrepo-Container-4-Cargo-Vans-UPS-Shipping-Box.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\conexionDB.vb" />
+    <Compile Include="Clases\DB.vb" />
+    <Compile Include="Formularios\Aduanas\Frm_ImportManifiesto.Designer.vb">
+      <DependentUpon>Frm_ImportManifiesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_ImportManifiesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto.Designer.vb">
+      <DependentUpon>Frm_Manifiesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto2.Designer.vb">
+      <DependentUpon>Frm_Manifiesto2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto3.Designer.vb">
+      <DependentUpon>Frm_Manifiesto3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto4.Designer.vb">
+      <DependentUpon>Frm_Manifiesto4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_Manifiesto4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_ReporteManifiesto.Designer.vb">
+      <DependentUpon>Frm_ReporteManifiesto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Aduanas\Frm_ReporteManifiesto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Principal.Designer.vb">
+      <DependentUpon>Frm_Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_MenuOperaciones.Designer.vb">
+      <DependentUpon>Frm_MenuOperaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_MenuOperaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_ReportePiezas.Designer.vb">
+      <DependentUpon>Frm_ReportePiezas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_ReportePiezas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_Tpd.Designer.vb">
+      <DependentUpon>Frm_Tpd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_Tpd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_ValidarFacturas.Designer.vb">
+      <DependentUpon>Frm_ValidarFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Operaciones\Frm_ValidarFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_Compensation2.Designer.vb">
+      <DependentUpon>Frm_Compensation2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_Compensation2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_MenuVentas.Designer.vb">
+      <DependentUpon>Frm_MenuVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_MenuVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_ValidacionFacturas.Designer.vb">
+      <DependentUpon>Frm_ValidacionFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas\Frm_ValidacionFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulos\ImportExcel.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Aduanas\Frm_ImportManifiesto.resx">
+      <DependentUpon>Frm_ImportManifiesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Aduanas\Frm_Manifiesto.resx">
+      <DependentUpon>Frm_Manifiesto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Aduanas\Frm_Manifiesto2.resx">
+      <DependentUpon>Frm_Manifiesto2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Aduanas\Frm_Manifiesto3.resx">
+      <DependentUpon>Frm_Manifiesto3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Aduanas\Frm_Manifiesto4.resx">
+      <DependentUpon>Frm_Manifiesto4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Operaciones\Frm_MenuOperaciones.resx">
+      <DependentUpon>Frm_MenuOperaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Operaciones\Frm_ReportePiezas.resx">
+      <DependentUpon>Frm_ReportePiezas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Operaciones\Frm_Tpd.resx">
+      <DependentUpon>Frm_Tpd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Operaciones\Frm_ValidarFacturas.resx">
+      <DependentUpon>Frm_ValidarFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\Frm_Compensation2.resx">
+      <DependentUpon>Frm_Compensation2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\Frm_MenuVentas.resx">
+      <DependentUpon>Frm_MenuVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Ventas\Frm_ValidacionFacturas.resx">
+      <DependentUpon>Frm_ValidacionFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Principal.resx">
+      <DependentUpon>Frm_Principal.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Images\zsalir21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zsalir21.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\ups_latest2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\znuevo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zEdit.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\save.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Floppy Disk Blue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\Floppy 1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zRemove.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zdeshacer2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zeliminar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\document_add_36x36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\icon_factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\zFolder64x64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Antrepo-Container-4-Cargo-Vans-UPS-Shipping-Box.ico" />
+    <None Include="Images\analitica %282%29.png" />
+    <None Include="Images\analitica %283%29.png" />
+    <None Include="Images\analitica %281%29.png" />
+    <None Include="Images\salida.png" />
+    <None Include="Images\sobresalir.png" />
+    <None Include="Images\error %281%29.png" />
+    <None Include="Resources\circulo-con-el-simbolo-de-verificacion.png" />
+    <None Include="Resources\folder apps.ico" />
+    <None Include="Resources\log.ico" />
+    <None Include="Resources\Write.ico" />
+    <None Include="Resources\ark2.ico" />
+    <None Include="Resources\BitTorrent 1.ico" />
+    <None Include="Resources\Floppy 1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
